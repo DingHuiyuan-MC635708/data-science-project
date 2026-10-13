@@ -1,0 +1,27 @@
+{
+  "observations": 132,
+  "start": "2015-01",
+  "end": "2025-12",
+  "period_correlations": [
+    {
+      "period": "All months: 2015\u20132025",
+      "months": 132,
+      "pearson_r": 0.9466151488155388
+    },
+    {
+      "period": "2015\u20132019",
+      "months": 60,
+      "pearson_r": 0.8076815868785225
+    },
+    {
+      "period": "2020\u20132022",
+      "months": 36,
+      "pearson_r": 0.7698146704970452
+    },
+    {
+      "period": "2023\u20132025",
+      "months": 36,
+      "pearson_r": 0.9134737478322734
+    }
+  ]
+}
