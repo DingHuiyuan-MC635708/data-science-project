@@ -62,15 +62,22 @@ Months with more arrivals generally have higher occupancy. The two colours show 
 
 The full-period correlation alone can hide differences between periods. The comparison provides context without removing the disruption from the dataset.
 
-## Limitations and next steps
+## Limitations
 
-Correlation does not establish causation. Common trends, seasonality, travel policies, room supply, and serial dependence may affect these associations. Total arrivals include same-day visitors, who may not use hotels. Monthly occupancy is not the same as an unweighted annual mean. Historical statistics can be revised, and hotel-sector definitions should be checked when extending the study.
+**Correlation does not establish causation.** Common trends, seasonality, public policy, travel restrictions, room supply, and serial dependence are not fully controlled. The COVID-19 disruption may affect the overall correlation. The data are monthly and aggregated, so individual visitor behaviour cannot be inferred. Total arrivals include same-day visitors, who may not use hotels. Monthly occupancy is not the same as an unweighted annual mean. Historical statistics can be revised, and hotel-sector definitions should be checked when extending the study.
+
+## Next improvements
 
 Next steps are to examine overnight arrivals and room supply, compare seasonal and lagged patterns, and document changes in series definitions. This wider project remains **ongoing**.
+
+The comparison for 2015–2019, 2020–2022, and 2023–2025 is already implemented; it is not listed as unfinished work. The [data dictionary](data/README.md) explains the merged variables, units, and source indicators.
 
 ## Reproduce the analysis
 
 Use **Python 3.11 or later**. From the root of this repository:
+
+1. Download and extract this repository's ZIP from **Code → Download ZIP**, or clone the repository. Open a terminal in the extracted repository folder.
+2. Create and activate an isolated environment, then install the dependencies and run the script:
 
 ```bash
 python -m venv .venv
@@ -80,7 +87,7 @@ python -m pip install -r requirements.txt
 python analysis.py
 ```
 
-The script uses paths relative to its own location and runs without downloading data. It generates three PNGs in `figures/`, descriptive statistics and correlations in `results/`, and `results/metrics.json`. It raises an error if the data checks fail. Expected output includes `Pearson correlation for all 132 months: r = 0.947` and `All data checks passed`.
+3. Check the terminal output and generated files. The script uses paths relative to its own location and runs without downloading data. It generates three PNGs in `figures/`, descriptive statistics and correlations in `results/`, and `results/metrics.json`. It raises an error if the data checks fail. Expected output includes `Pearson correlation for all 132 months: r = 0.947` and `All data checks passed`.
 
 The environment used for verification is recorded in `VALIDATION.md`. Reproduction here means rerunning the numerical analysis and generating the figures from the retained dataset; it does not mean independently repeating the original government surveys.
 
@@ -98,5 +105,9 @@ This repository presents the reproducible portfolio version and adds the current
 - `data/`: frozen official response and merged public data.
 - `figures/`: three real visualizations.
 - `results/`: calculated outputs.
+
+## Peer feedback and improvement
+
+The classmate feedback supplied on 14 October 2026 identified the research question, main finding, and limitation. In response, this version makes **Limitations** and **Next improvements** separate sections, adds a data dictionary, and clarifies the reproduction steps. The requested subperiod analysis was already present and is retained. See [PEER_FEEDBACK.md](PEER_FEEDBACK.md) for the record.
 
 The portfolio is maintained in the [data-science-portfolio repository](https://github.com/DingHuiyuan-MC635708/data-science-portfolio).
