@@ -95,7 +95,7 @@ The environment used for verification is recorded in `VALIDATION.md`. Reproducti
 
 This portfolio adapts the **CISC7204 Assignment 01 Preliminary Project Proposal**, a pair project by Ding Huiyuan and Duan Qingru. The proposal assigns Ding Huiyuan coordination, data preparation, and Notebook maintenance, and Duan Qingru source verification and visualization review; these are proposal roles, not a claim that every planned task was completed. The original proposal and notebook are retained in the [original course repository](https://github.com/DingHuiyuan-MC635708/CISC7204-MC635708-2026GitHub/tree/main/cisc7204-Assgn01-2026-MC635708/proposal).
 
-This repository presents the reproducible portfolio version and adds the current official snapshot, automatic validation, saved result tables, and period comparison. Shared work is acknowledged; independent authorship of the original pair project is not claimed. AI assisted preparation of this version, including code adaptation, documentation, and checks; see `AI_USAGE.md`.
+This repository presents the reproducible portfolio version and adds the current official snapshot, automatic validation, saved result tables, and period comparison. Shared work is acknowledged; independent authorship of the original pair project is not claimed. AI assisted preparation of this version, including code adaptation, documentation, and checks; see [AI_USAGE.md](AI_USAGE.md).
 
 ## Files
 
@@ -111,3 +111,7 @@ This repository presents the reproducible portfolio version and adds the current
 The classmate feedback supplied on 14 October 2026 identified the research question, main finding, and limitation. In response, this version makes **Limitations** and **Next improvements** separate sections, adds a data dictionary, and clarifies the reproduction steps. The requested subperiod analysis was already present and is retained. See [PEER_FEEDBACK.md](PEER_FEEDBACK.md) for the record.
 
 The portfolio is maintained in the [data-science-portfolio repository](https://github.com/DingHuiyuan-MC635708/data-science-portfolio).
+
+## Assessment evidence
+
+See [ASSESSMENT_CHECKLIST.md](ASSESSMENT_CHECKLIST.md) for the requirement-to-evidence map and [VALIDATION.md](VALIDATION.md) for the latest execution record.

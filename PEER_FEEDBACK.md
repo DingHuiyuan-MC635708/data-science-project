@@ -21,3 +21,10 @@ The reviewer recognized that correlation does not establish causation, and that 
 Descriptive commit message: **Clarify limitations and data dictionary from peer feedback**.
 
 The repository histories record the actual corresponding commits in the project and portfolio. Their verified links are included in the final submission materials after publication.
+
+## Direct evidence links
+
+- [Project documentation improvement](https://github.com/DingHuiyuan-MC635708/data-science-project/commit/8856c183138b499eb7987e19ac133a1827dd0a43)
+- [Portfolio improvement](https://github.com/DingHuiyuan-MC635708/data-science-portfolio/commit/97c11e6236df5663f43e486d126b6ec74f2c6343)
+
+The November maintenance is separate from the original October peer review; it does not claim a new review.

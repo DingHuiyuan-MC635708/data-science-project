@@ -13,3 +13,9 @@ Verified on **13 October 2026**.
 These checks validate the included analysis against its retained official snapshot. They do not independently validate the government data collection or establish a causal relationship.
 
 Deployment, public links, and the classmate-feedback requirement are checked separately in the Practice 09 submission checklist.
+
+## Follow-up verification — 3 November 2026
+
+A new isolated environment used Python 3.14.7 with the pinned requirements. `analysis.py` ran successfully: 132 months, zero duplicates or missing values, exact retained-snapshot comparisons passed, and all three figures and result tables were regenerated. Correlations reproduced as 0.946615, 0.807682, 0.769815, and 0.913474. This rerun does not refresh or independently authenticate the government dataset.
+
+The scatter chart now reports arrivals in millions and correlation to three decimal places. The website receives the same regenerated figures.

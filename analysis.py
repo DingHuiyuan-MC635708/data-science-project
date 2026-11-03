@@ -13,6 +13,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
+from matplotlib.ticker import FuncFormatter
 from pathlib import Path
 
 plt.style.use('seaborn-v0_8-whitegrid')
@@ -93,11 +94,12 @@ ax.plot(x_line, y_line, color='#333333', linewidth=2, label='Fitted linear trend
 
 ax.set_title('Visitor Arrivals and Hotel Occupancy in Macao, 2015–2025',
              fontsize=16, fontweight='bold')
-ax.set_xlabel('Monthly visitor arrivals')
+ax.set_xlabel('Monthly visitor arrivals (millions)')
+ax.xaxis.set_major_formatter(FuncFormatter(lambda value, pos: f'{value / 1_000_000:g}'))
 ax.set_ylabel('Hotel occupancy rate (%)')
 ax.set_ylim(0, 100)
 ax.legend(loc='lower right')
-ax.text(0.02, 0.96, f'Pearson correlation: r = {correlation:.2f}',
+ax.text(0.02, 0.96, f'Pearson correlation: r = {correlation:.3f}',
         transform=ax.transAxes, va='top',
         bbox=dict(facecolor='white', alpha=0.9, edgecolor='#aaaaaa'))
 fig.text(0.01, 0.025,
